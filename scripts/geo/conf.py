@@ -19,4 +19,4 @@ if __name__ == '__main__':
     pconf["process_funs"]["normalize"]["stats_path"] = stats_path.replace("FOLD_NUM", str(args.index_split))
 
     with open(args.output_file, 'w') as f:
-        yaml.dump(pconf, f, default_flow_style=False, sort_keys=FALSE)
+        yaml.dump(pconf, f, default_flow_style=False, sort_keys=False)
