@@ -18,7 +18,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Preprocess raw tiffs into slices")
     parser.add_argument("-o", "--output_dir", type=str)
     parser.add_argument("-m", "--slices_meta", type=str)
-    parser.add_argument("-p", "--postprocess_conf", type=str, default = "conf/process_geo.conf")
+    parser.add_argument("-p", "--postprocess_conf", type=str, default = "conf/geo/postprocess.yaml")
     args = parser.parse_args()
 
     # data directories
