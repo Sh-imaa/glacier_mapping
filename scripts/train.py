@@ -8,6 +8,7 @@ from glacier_mapping.models.frame import Framework
 from glacier_mapping.models.metrics import diceloss
 from torch.utils.tensorboard import SummaryWriter
 import glacier_mapping.train as tr
+import torch
 import json
 
 if __name__ == '__main__':
