@@ -1,8 +1,8 @@
 split_method:
   geographic_split:
     geojsons:
-      train: "/datadrive/glaciers/expers/geographic/splits_all_channel/FOLD_NUM/train.geojson"
-      test: "/datadrive/glaciers/expers/geographic/splits_all_channel/FOLD_NUM/test.geojson"
+      train: "/datadrive/glaciers/expers/geographic/splits/FOLD_NUM/train.geojson"
+      test: "/datadrive/glaciers/expers/geographic/splits/FOLD_NUM/test.geojson"
 normalization_sample_size: 100
 process_funs:
   impute: {value: 0}

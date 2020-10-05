@@ -20,6 +20,6 @@ metrics_opts:
   recall:
     threshold: 0.4
 log_opts:
-  mask_names: ["glaciers"]
+  mask_names: [clean_glaciers, debris_glaciers, background]
 reg_opts:
   l1_reg: 0.0005
