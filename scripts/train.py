@@ -5,6 +5,7 @@ import yaml
 from addict import Dict
 from glacier_mapping.data.data import fetch_loaders
 from glacier_mapping.models.frame import Framework
+from glacier_mapping.models.metrics import diceloss
 from torch.utils.tensorboard import SummaryWriter
 import glacier_mapping.train as tr
 import json
@@ -35,7 +36,8 @@ if __name__ == '__main__':
     frame = Framework(
         model_opts=conf.model_opts,
         optimizer_opts=conf.optim_opts,
-        reg_opts=conf.reg_opts
+        reg_opts=conf.reg_opts,
+        loss_fn=diceloss(act=torch.nn.Softmax(dim=1), w=[1, 1, 0])
     )
 
     # Setup logging
