@@ -13,5 +13,4 @@ request_cpus = 1
 request_memory = 64GB
 request_disk = 12GB
 +WantGPULab = true
-+wantFlocking = true
 +GPUJobLength = "short"
